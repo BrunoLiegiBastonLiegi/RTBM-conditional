@@ -31,7 +31,9 @@ def hist(data, a, eps=0.1, axes='x'):
 
 
 class Student(object):
-    
+    """Multivariate student-t distribution.
+
+    """
     def __init__(self, m, S, v, p=2):
         self.m = m
         self.S = S
@@ -70,7 +72,7 @@ class Student(object):
     
 
 def rotate(M):
-    """Rotates a RTBM model by an Pi/2 angle in counterclockwise direction.
+    """Rotates a RTBM model by a Pi/2 angle in counterclockwise direction.
     
     """
     nh = M._Nh
