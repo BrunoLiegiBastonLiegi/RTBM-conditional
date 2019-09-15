@@ -1,5 +1,19 @@
+
+
+# Example of a 2D gaussian mixture distribution.
+# A sample of 5000 elements extracted from this distribution is contained
+# in gaussian-mix.npy.
+# We first model the distribution with a RTBM and then we can generate
+# three conditional distributions at three different points, using the
+# conditional function contained in tools/conditional.
+
+
+
+
+
+
 import sys
-sys.path.append('../tools')
+sys.path.append('../../tools')
 
 import conditional as con
 import utils as ut
@@ -31,7 +45,7 @@ M.set_parameters(np.array([ 1.02735619e-05, -3.63860337e-04,  2.15571853e+00 ,-2
 
 
 # conditional models
-y_slice = np.array([0.6, 0.15, -0.2])
+y_slice = np.array([0.6, 0.15, -0.2]) #fixed y at which we calculate the conditional probability p(x|y)
 M1 = con.conditional(M, y_slice[0])
 M2 = con.conditional(M, y_slice[1])
 M3 = con.conditional(M, y_slice[2])
