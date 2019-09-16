@@ -12,7 +12,7 @@
 
 
 import sys
-sys.path.append('../../tools')
+sys.path.append('../../main')
 
 import conditional as con
 import utils as ut
