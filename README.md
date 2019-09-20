@@ -1,6 +1,6 @@
-###########################|----------------------------|#######################################
-###########################| RTBM-conditional |#######################################
-###########################|----------------------------|#######################################
+
+# RTBM-conditional 
+
 
 
 
@@ -15,16 +15,12 @@ official github page https://github.com/RiemannAI/theta.
 
 
 
-
-########## Requirements
+## Requirements
 
 - theta 0.0.1
 
 
-
-
-
-########## Legend
+## Legend
 
 
 The code concerning the actual conditional probability function can be found in
